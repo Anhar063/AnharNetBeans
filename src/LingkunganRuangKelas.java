@@ -1,3 +1,13 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author ASUS_PC
+ */
 public class LingkunganRuangKelas extends IdentitasRuangKelas{
 
 private String kondisiLantai;
@@ -10,7 +20,7 @@ public LingkunganRuangKelas(String namaRuang, String lokasiRuang,
 String Fakultas) {
 super(namaRuang, lokasiRuang, Fakultas);
 }
-
+//belum ditambah override
 public LingkunganRuangKelas(String namaRuang, String lokasiRuang,
 String Fakultas, String kondisiLantai, String kondisiDinding,
 String kondisiAtap, String kondisiPintu, String kondisiJendela) {
