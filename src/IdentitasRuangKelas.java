@@ -1,7 +1,11 @@
-public class IdentitasRuangKelas {
-private final String namaRuang;
-private final String lokasiRuang;
-private final String Fakultas;
+public abstract class IdentitasRuangKelas {
+private String namaRuang;
+private String lokasiRuang;
+private String Fakultas;
+
+public IdentitasRuangKelas(){
+
+}
 
 public IdentitasRuangKelas(String namaRuang, String lokasiRuang,
 String Fakultas) {
@@ -10,6 +14,20 @@ this.namaRuang = namaRuang;
 this.lokasiRuang = lokasiRuang;
 this.Fakultas = Fakultas;
 }
+
+
+public void setNamaRuang(String namaRuang) {
+this.namaRuang = namaRuang;
+}
+
+public void setLokasiRuang(String lokasiRuang) {
+this.lokasiRuang = lokasiRuang;
+}
+
+public void setFakultas(String fakultas) {
+Fakultas = fakultas;
+}
+
 public String getNamaRuang() {
 return namaRuang;
 }
@@ -21,8 +39,9 @@ return Fakultas;
 }
 
 
+abstract public String deskripsiKelas();
+
 
 
 
 }
-
