@@ -1,4 +1,4 @@
-public class analisis extends IdentitasRuangKelas implements kalkulasi {
+public class analisis extends IdentitasRuangKelas implements hitung {
 
 private int sesuai=0;
 private int tdksesuai=0;
@@ -6,7 +6,7 @@ private int tdksesuai=0;
 Inputan inp = new Inputan();
 
 public analisis(){
-if("sesuai".equals(inp.kelasKondisi().hitungBentukRuang(inp.kelasKondisi().getPanjangRuang(), inp.kelasKondisi().getLebarRuang()))){
+if("sesuai".equals(inp.kelasKondisi().hitungBentukRuang(Inputan.kelasKondisi().getPanjangRuang(), inp.kelasKondisi().getLebarRuang()))){
 ++sesuai;
 }else{
 ++tdksesuai;

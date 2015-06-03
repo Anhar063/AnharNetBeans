@@ -1,10 +1,18 @@
-public class LingkunganRuangKelas extends IdentitasRuangKelas{
+import java.io.Serializable;
+
+public abstract class LingkunganRuangKelas extends IdentitasRuangKelas implements Serializable{
+
+
 
 private String kondisiLantai;
 private String kondisiDinding;
 private String kondisiAtap;
 private String kondisiPintu;
 private String kondisiJendela;
+
+public LingkunganRuangKelas(){
+
+}
 
 public LingkunganRuangKelas(String namaRuang, String lokasiRuang,
 String Fakultas) {

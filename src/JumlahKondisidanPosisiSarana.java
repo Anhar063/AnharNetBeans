@@ -1,4 +1,6 @@
-public class JumlahKondisidanPosisiSarana extends KondisiRuangKelas implements kalkulasi{
+import java.io.Serializable;
+
+public class JumlahKondisidanPosisiSarana extends KondisiRuangKelas implements hitung, Serializable{
 private int jumlahStopkontak;
 private int kondisiStopKontak;
 private int posisiStopKontak;
@@ -27,6 +29,9 @@ private int sesuai=0;
 private int tdksesuai=0;
 
 
+public JumlahKondisidanPosisiSarana(){
+
+}
 
 public JumlahKondisidanPosisiSarana(String namaRuang, String lokasiRuang,
 String Fakultas) {
